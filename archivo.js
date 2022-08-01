@@ -1,16 +1,18 @@
-function saqueSuTurno(){
-    
-    for (let i=0; i<10; i++){
-        let opcion = prompt("Introduzca el nombre del paciente");
-        alert ("Buenos dias " + opcion+ ", le informamos que su turno es el Nº " + i+ " con el doctor Saravia. Dia Lunes a partir de las 8:00")
+function calcularDescuento(){
 
-    let confirmar = confirm('Quiere agregar otro turno?')
-        if(!confirmar){
-            alert('muchas Gracias')
-            break
-        }
+    let opcion=prompt("Escribi aqui el precio al que deseas aplicar el descuento")
+    let opcion2=prompt("Escribi aqui el % de descuento que quieras aplicar a " + opcion)
+
+    let calculo=( opcion * opcion2 / 100)
+    let calculo2=(opcion-calculo)
+
+    alert ("El decuento que se va a aplicar es de " + calculo );
+
+    alert ("El precio final con el descuento incluido es de " + calculo2)
+
     }
-}
+
+
 
 
 
